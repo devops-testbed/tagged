@@ -45,6 +45,21 @@ jobs:
 
 ```
 
+## Deleting Releases
+
+In addition to deleting tags, you might also want to delete the releases associated with these tags. You can do this using the GitHub CLI.
+
+Here's a bash script that lists all releases, extracts the tag names, and then iterates over them. If a tag is greater than "v12.0", it deletes the corresponding release:
+
+```bash
+gh release list --json 'tagName' | jq -r '.[] | .tagName' | while read tag; do
+    if [[ "$tag" > "v12.0" ]]; then
+        echo "Deleting release $tag"
+        gh release delete $tag --confirm
+    fi
+done
+```
+
 ## Protected Tags
 
 While this project demonstrates how to delete tags using GitHub Actions, a more secure and recommended approach is to use protected tags. 
