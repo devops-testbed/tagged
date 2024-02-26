@@ -1,4 +1,4 @@
-# Tag Deletion Demonstration
+# 🏷️❌ Tag Terminator: 🤖 Git Tag Management 
 
 This project demonstrates how to automatically delete a Git tag if it's pushed by mistake, in the absence of tag protection rules. This is particularly useful in scenarios where you want to enforce a certain naming convention or versioning scheme for your tags.
 
