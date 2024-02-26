@@ -72,4 +72,4 @@ You can also import existing tag protection rules into repository rulesets. This
 
 To add a tag protection rule or import tag protection rules to repository rulesets, you can navigate to the "Tags" section in the "Code and automation" section of the repository settings.
 
-For more information, see the [GitHub documentation on tag protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#creating-a-protected-branch).
+For more information, see the [GitHub documentation on tag protection rules](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-tag-protection-rules).
