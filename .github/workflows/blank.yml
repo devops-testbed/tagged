@@ -22,6 +22,6 @@ jobs:
 
         if (( $(echo "$TAG_VERSION > $MIN_VERSION" | bc -l) )); then
           echo "Deleting tag $TAG_NAME"
-          git tag -d $TAG_NAME
-          git push origin :refs/tags/$TAG_NAME
+          git tag -d ${TAG_NAME#refs/tags/}
+          git push origin :${TAG_NAME#refs/tags/}
         fi
